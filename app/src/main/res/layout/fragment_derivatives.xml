@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/derivMainLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    android:orientation="vertical"
+    tools:context=".ui.Derivatives">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/sv"
+                android:layout_width="302dp"
+                android:layout_height="277dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/containerResults"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+                </HorizontalScrollView>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/tempLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/rootLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/rootNLL"
+                        android:layout_width="67dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="n"
+                        android:inputType="textPersonName"
+                        android:textColor="#DFDBDB"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewfd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="√("
+                        android:textColor="#ACACAC"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/rootFunc"
+                        android:layout_width="210dp"
+                        android:layout_height="45dp"
+                        android:ems="10"
+                        android:enabled="true"
+                        android:inputType="textPersonName"
+                        android:textColor="#DFDBDB"
+                        android:textColorHint="#B4B3B3" />
+
+                    <TextView
+                        android:id="@+id/textView2fd4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=")"
+                        android:textColor="#ACACAC"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/logLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="log"
+                        android:textColor="#ACACAC"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/aLog"
+                        android:layout_width="52dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:enabled="true"
+                        android:hint="a"
+                        android:inputType="textPersonName"
+                        android:textColor="#DFDBDB"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="("
+                        android:textColor="#ACACAC"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/logFunc"
+                        android:layout_width="209dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:enabled="true"
+                        android:inputType="textPersonName"
+                        android:textColor="#DFDBDB"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=")"
+                        android:textColor="#ACACAC"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/absLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:textColor="#ACACAC"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/absFunc"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:enabled="true"
+                        android:hint="x"
+                        android:inputType="textPersonName"
+                        android:textAlignment="viewStart"
+                        android:textColor="#DFDBDB"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:textColor="#ACACAC"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/intDefLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ʃ"
+                        android:textColor="#ACACAC"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/bArgInt"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:enabled="true"
+                        android:hint="b"
+                        android:inputType="textPersonName"
+                        android:textColor="#DFDBDB"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/aArgInt"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:enabled="true"
+                        android:hint="a"
+                        android:inputType="textPersonName"
+                        android:textColor="#DFDBDB"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="("
+                        android:textColor="#ACACAC"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/intFunc"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textColor="#DFDBDB"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=")d"
+                        android:textColor="#ACACAC"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/argInt"
+                        android:layout_width="29dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="x"
+                        android:inputType="textPersonName"
+                        android:textColor="#DFDBDB"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/derLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="f'("
+                        android:textColor="#ACACAC"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/argDer"
+                        android:layout_width="36dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:enabled="true"
+                        android:hint="x"
+                        android:inputType="textPersonName"
+                        android:textColor="#DFDBDB"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=") = ("
+                        android:textColor="#ACACAC"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/derFunc"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:enabled="true"
+                        android:inputType="textPersonName"
+                        android:lineSpacingExtra="12sp"
+                        android:textColor="#DFDBDB"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=")'"
+                        android:textColor="#ACACAC"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/funcLL"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/funcText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:scrollbars="horizontal"
+                    android:scrollHorizontally="true"
+                    android:textColor="#E4D3D3"
+                    android:textIsSelectable="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="320dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/clearBut"
+                        android:layout_width="36dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="5px"
+                        android:backgroundTint="#F44336"
+                        android:text="CL"
+                        android:textSize="10sp" />
+
+                    <Button
+                        android:id="@+id/xVButOK"
+                        android:layout_width="35dp"
+                        android:layout_height="31dp"
+                        android:backgroundTint="#009688"
+                        android:text="\\/"
+                        android:textSize="8sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/copyBut"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/ic_copy_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/variablesLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#673AB7"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:text="x="
+                        android:textColor="#E2E1E1"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/xValue"
+                        android:layout_width="47dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="х"
+                        android:inputType="number"
+                        android:textColor="#C7C7C7"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:text="y="
+                        android:textColor="#E2E1E1"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/yValue"
+                        android:layout_width="47dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="y"
+                        android:inputType="textPersonName"
+                        android:textColor="#C7C7C7"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:text="z="
+                        android:textColor="#E2E1E1"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/gValue"
+                        android:layout_width="47dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="z"
+                        android:inputType="textPersonName"
+                        android:textColor="#C7C7C7"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:text="f="
+                        android:textColor="#E2E1E1"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/fValue"
+                        android:layout_width="47dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="f"
+                        android:inputType="textPersonName"
+                        android:textColor="#C7C7C7"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:text="h="
+                        android:textColor="#E2E1E1"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/aValue"
+                        android:layout_width="47dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="h"
+                        android:inputType="textPersonName"
+                        android:textColor="#C7C7C7"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:text="k="
+                        android:textColor="#E2E1E1"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/bValue"
+                        android:layout_width="47dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="k"
+                        android:inputType="textPersonName"
+                        android:textColor="#C7C7C7"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:text="m="
+                        android:textColor="#E2E1E1"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/tValue"
+                        android:layout_width="47dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="m"
+                        android:inputType="textPersonName"
+                        android:textColor="#C7C7C7"
+                        android:textColorHint="#B4B3B3"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="210dp"
+                android:src="@drawable/ic_arrow_upward_black_24dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/but7"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:text="7" />
+
+                <Button
+                    android:id="@+id/but8"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:text="8" />
+
+                <Button
+                    android:id="@+id/but9"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:text="9" />
+
+                <Button
+                    android:id="@+id/plusBut"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#E91E1E"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/xnBut"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4CAF50"
+                    android:text="^"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/piBut"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#60C8FC"
+                    android:text="π"
+                    android:textAllCaps="false" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/but4"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:text="4" />
+
+                <Button
+                    android:id="@+id/but5"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:text="5" />
+
+                <Button
+                    android:id="@+id/but6"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:text="6" />
+
+                <Button
+                    android:id="@+id/minusBut"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#E91E1E"
+                    android:text="-" />
+
+                <Button
+                    android:id="@+id/sqrtxBut"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4CAF50"
+                    android:text="√"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/eBut"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#60C8FC"
+                    android:text="e"
+                    android:textAllCaps="false" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/but1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/but2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/but3"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:text="3" />
+
+                <Button
+                    android:id="@+id/multBut"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#E91E1E"
+                    android:text="×" />
+
+                <Button
+                    android:id="@+id/hookOpBut"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4CAF50"
+                    android:text="(" />
+
+                <Button
+                    android:id="@+id/hookClBut"
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4CAF50"
+                    android:text=")" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/commaBut"
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4CAF50"
+                    android:text="," />
+
+                <Button
+                    android:id="@+id/but0"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/dotBut"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4CAF50"
+                    android:text="." />
+
+                <Button
+                    android:id="@+id/divBut"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#E91E1E"
+                    android:text="÷" />
+
+                <Button
+                    android:id="@+id/perCentBut"
+                    android:layout_width="47dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#4CAF50"
+                    android:text="%" />
+
+                <Button
+                    android:id="@+id/wipeOffBut"
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#3C50C5"
+                    android:text="←"
+                    android:textSize="18sp" />
+
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/xBut"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A27F61"
+                    android:text="x"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/yBut"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A27F61"
+                    android:text="y"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/gBut"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A27F61"
+                    android:text="z"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/fBut"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A27F61"
+                    android:text="f"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/aBut"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A27F61"
+                    android:text="h"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/bBut"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A27F61"
+                    android:text="k"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/tBut"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A27F61"
+                    android:text="m"
+                    android:textAllCaps="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/notBut"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A27F61"
+                    android:text="!"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/lessBut"
+                    android:layout_width="49dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A27F61"
+                    android:text="«"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/moreBut"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A27F61"
+                    android:text="»"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/equalsBut"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A27F61"
+                    android:text="="
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/notEqualsBut"
+                    android:layout_width="34dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A27F61"
+                    android:text="≠" />
+
+                <Button
+                    android:id="@+id/braketOpBut"
+                    android:layout_width="46dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A27F61"
+                    android:text="["
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/braketClBut"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#A27F61"
+                    android:text="]" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/lnxBut"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F44336"
+                    android:capitalize="characters"
+                    android:text="ln"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/logxBut"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F44336"
+                    android:text="logₐ"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/log10xBut"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F44336"
+                    android:text="log₁₀"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/sinbut"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F44336"
+                    android:text="sin"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/cosBut"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F44336"
+                    android:text="cos"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/tanBut"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F44336"
+                    android:text="tan"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/ctgBut"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F44336"
+                    android:text="ctg"
+                    android:textAllCaps="false" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="63dp">
+
+            <Button
+                android:id="@+id/rootBut"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F44336"
+                android:text="ⁿ√"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/absBut"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F44336"
+                android:text="|x|"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/intDefBut"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F44336"
+                android:text="ʃₐᵇ"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/derBut"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F44336"
+                android:text="f'(x)"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/addExp"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#9C27B0"
+                android:enabled="false"
+                android:text="res"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/funcButt"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/but_solve"
+                android:textAllCaps="false"
+                android:textColor="#FF0000"
+                android:textSize="16sp" />
+
+        </TableRow>
+    </LinearLayout>
+</LinearLayout>

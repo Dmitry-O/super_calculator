@@ -1,0 +1,120 @@
+<resources>
+    <string name="title">My Application</string>
+    <string name="hello_world">Hello World!</string>
+
+    <string name="app_name">Super Calculator</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="MatrixFragment">matrixFragment</string>
+    <string name="Производные">Derivatives</string>
+    <string name="Матрицы">Matrices</string>
+    <string name="Векторы">Vectors</string>
+    <string name="ScientificCalculator">Scientific calculator</string>
+    <string name="formulas">Formulas</string>
+
+    <string name="Powers1">Powers</string>
+    <string name="Logs">Logarithms</string>
+    <string name="Derivs">Derivatives</string>
+    <string name="Integs">Integrals</string>
+    <string name="Trigs">Trigonometric</string>
+    <string name="Roots">Roots</string>
+    <string name="about">About</string>
+    <string name="share">Share</string>
+    <string name="rate">Rate the app</string>
+    <string name="exit">Exit</string>
+    <string name="history">History</string>
+    <string name="settings">Settings</string>
+    <string name="but_solve">Solve ✓</string>
+    <string name="tst_input_x">Input value x</string>
+    <string name="tst_input_y">Input value y</string>
+    <string name="tst_input_f">Input value f</string>
+    <string name="tst_input_g">Input value z</string>
+    <string name="tst_input_a">Input value h</string>
+    <string name="tst_input_b">Input value k</string>
+    <string name="tst_input_t">Input value m</string>
+    <string name="expression"><![CDATA[expression>]]></string>
+    <string name="answer"><![CDATA[answer> res = ]]></string>
+    <string name="error"><![CDATA[error> Incorrect expression! ]]></string>
+    <string name="tst_fill_in_all_fields">Fill in all fields!</string>
+    <string name="matr_but_solve">Calculate</string>
+    <string name="matr_but_clear">Clear</string>
+    <string name="matr_errors_plus"> To add matrices, their number of rows and columns must match!</string>
+    <string name="matr_errors_minus"> To subtract matrices, their number of rows and columns must match!</string>
+    <string name="matr_errors_lambda"> To multiply by a scalar, enter lambda!</string>
+    <string name="matr_errors_mult"> For matrix multiplication, the number of rows in the first must match the number of columns in the second!</string>
+    <string name="matr_errors_det"> To find the determinant of a matrix, it is necessary that the matrix be symmetric (the number of rows equals the number of columns)!</string>
+    <string name="matr_errors_inv"> To find the inverse matrix, it is necessary that the matrix is symmetric (the number of rows equals the number of columns)!</string>
+    <string name="vect_error_input_all_values"><![CDATA[error> Enter all the values you need to calculate!]]></string>
+    <string name="exit_essuarance">Are you sure you want to exit?</string>
+    <string name="exit_yes">Yes</string>
+    <string name="exit_no">No</string>
+    <string name="hist_theres_no_values_for_now">So far there is nothing here. Do the calculations in the main sections</string>
+    <string name="share_tell_friends">Tell about Super Calculator</string>
+    <string name="share_theme">Mobile app Super Calculator</string>
+    <string name="share_text">Download the best calculator on Google Play! Follow the link: https://play.google.com/store/apps/details?id=com.google.android.gm</string>
+    <string name="sett_dark_theme">Dark theme</string>
+    <string name="sett_changing_bg">Change application background color</string>
+    <string name="sett_numb_dec">Number of decimal places</string>
+    <string name="sett_setting_num_symb">Setting the number of decimal places as a result of calculation</string>
+    <string name="sett_vibration">Click vibration</string>
+    <string name="sett_set_vibration">Set vibration when clicking buttons in calculator</string>
+    <string name="sett_discharge">Reset settings</string>
+    <string name="sett_discharge_all_settings">Reset all settings to default</string>
+    <string name="sett_report">Report a bug</string>
+    <string name="sett_report_of_issue">Send error message</string>
+    <string name="about_choose_app">Select an application to communicate</string>
+    <string name="about_about">Super Calculator is an application designed to simplify your life, dear friend :) This is a powerful tool designed to solve various mathematical problems</string>
+    <string name="about_what_it_can_do">What is Super Calculator capable of?</string>
+    <string name="about_features">- perform various calculations with matrices;\n- perform various calculations with vectors;\n- using the section \'Scientific Calculator\' you will be able to:\n\t\t\t- perform simple arithmetic operations;\n\t\t\t- get quick access to constants;\n\t\t\t- find values ​​for trigonometric functions;\n\t\t\t- create your own functions with your variables that you initialize;\n\t\t\t- work with equations;\n\t\t\t- work with logarithms; \n\t\t\t- find the roots with an indicator, function modules; \n\t\t\t- calculate certain integrals;\n\t\t\t- find the value of derivative functions at points;\n\t\t\t- have quick access to basic mathematical formulas.</string>
+    <string name="about_developer">Developer: Dmitry Olkhovikov</string>
+    <string name="about_version">Version: 1.0</string>
+    <string name="about_updating_date">Update date: 11/24/2019</string>
+    <string name="about_but_check_updates">Check for updates</string>
+    <string name="matr_expr_c"><![CDATA[expression> C = ]]></string>
+    <string name="matr_expr_const"><![CDATA[expression> const = ]]></string>
+    <string name="matr_vect_answer"><![CDATA[answer> ]]></string>
+    <string name="tell_of_issue">Tell us about an error you found</string>
+    <string name="send_report_but">Send</string>
+    <string name="issue">Error report</string>
+    <string name="tst_enter_report_first">Enter your report at first!</string>
+    <string name="sett_r_u_sure_reset">Are you sure you want to reset all settings?</string>
+    <string name="go_back">Go back</string>
+    <string name="answer_for_matrices"><![CDATA[answer> C = ]]></string>
+    <string name="double_press_to_exit">Click BACK again to exit</string>
+    <string name="copied_answer">Last answer was copied</string>
+    <string name="theres_no_inverse">error> Determinant of this matrix is zero, so inverse matrix does not exist</string>
+    <string name="copied_history">All history of calculations was copied to clipboard</string>
+    <string name="copy_all">Copy all</string>
+    <string name="give_five_stars">Please give us 5 stars 😇</string>
+    <string name="will_be_missing">We\'ll be missing you 🥺 Come back soon!</string>
+    <string name="restarting_app">For the changes to take effect, the app will restart. Please do not do anything. All the progress of what you do during this time will be lost!</string>
+    <string name="tst_app_will_reboot">For the changes to take effect, the app will restart after you leave the \"Settings\" section</string>
+    <string name="image_loaded">Image loaded</string>
+    <string name="done_reloading">Done! 😉</string>
+    <string name="finish_entering">To get access to variables finish entering of values in the function at first</string>
+    <string name="scroll_filed">In case if there\'s not enough space for input, scroll the input field ↑</string>
+    <string name="choose_file">Choose a file</string>
+    <string name="file_with_path">File with path:</string>
+    <string name="was_selected">was selected</string>
+
+    <drawable name="dersD">@drawable/derivatives</drawable>
+    <drawable name="powsD">@drawable/powers</drawable>
+    <drawable name="intsD">@drawable/integs</drawable>
+    <drawable name="logsD">@drawable/logs</drawable>
+    <drawable name="trigsD">@drawable/trigs</drawable>
+    <drawable name="rootsD">@drawable/roots</drawable>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_derivatives">
+
+    <fragment
+        android:id="@+id/nav_matrix"
+        android:name="com.example.supercalculator.ui.Matrices"
+        android:label="@string/Матрицы"
+        tools:layout="@layout/fragment_matrices" />
+    <fragment
+        android:id="@+id/nav_derivatives"
+        android:name="com.example.supercalculator.ui.Derivatives"
+        android:label="@string/ScientificCalculator"
+        tools:layout="@layout/fragment_derivatives" />
+    <fragment
+        android:id="@+id/nav_vectors"
+        android:name="com.example.supercalculator.ui.Vectors"
+        android:label="@string/Векторы"
+        tools:layout="@layout/fragment_vectors" />
+    <fragment
+        android:id="@+id/nav_formulas"
+        android:name="com.example.supercalculator.ui.Formulas"
+        android:label="@string/formulas"
+        tools:layout="@layout/fragment_formulas" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.supercalculator.ui.About"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.supercalculator.ui.Share"
+        android:label="@string/share"
+        tools:layout="@layout/fragment_share" />
+    <fragment
+        android:id="@+id/nav_rate"
+        android:name="com.example.supercalculator.ui.Rate"
+        android:label="@string/rate"
+        tools:layout="@layout/fragment_rate" />
+    <fragment
+        android:id="@+id/nav_exit"
+        android:name="com.example.supercalculator.ui.Exit"
+        android:label="@string/exit"
+        tools:layout="@layout/fragment_exit" />
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.supercalculator.ui.History"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.supercalculator.ui.Settings"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
